@@ -1,0 +1,5 @@
+rpc_url=
+dial_timeout=15s
+tls_handshake_timeout=15s
+http_client_timeout=15s
+depth=100
