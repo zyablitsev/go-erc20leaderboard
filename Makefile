@@ -33,10 +33,7 @@ run-amd64:
 docker-build:
 	docker build -t zyablitsev/leaderboard .
 
-docker-rm:
-	docker rm -f leaderboard 2>/dev/null || true
-
-docker-run: docker-rm
+docker-run:
 	docker run \
 		-e "RPC_URL=${v_rpc_url}" \
 		-e "DIAL_TIMEOUT=${v_dial_timeout}" \
